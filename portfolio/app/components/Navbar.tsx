@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 const links = [
   { label: 'ABOUT ME', href: '#about' },
@@ -24,11 +25,22 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 bg-white ${scrolled ? 'shadow-sm' : ''
         }`}
     >
+
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-        {/* Logo */}
-        <a href="#hero" className="text-xl font-black tracking-tight text-charcoal">
-          Bhagya <span className="text-accent">/ UX</span>
-        </a>
+        {/* Logo with Avatar */}
+        <div className="flex items-center gap-3">
+          <Image
+            src="/avatar1.png"
+            alt="Avatar"
+            width={40}
+            height={40}
+            className="rounded-full border border-gray-200 shadow-sm"
+            priority
+          />
+          <a href="#hero" className="text-xl font-black tracking-tight text-charcoal">
+            <span className="text-black-600">Bhagya</span> <span className="text-accent"></span>
+          </a>
+        </div>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
@@ -44,8 +56,9 @@ export default function Navbar() {
           ))}
         </nav>
 
+
         {/* Resume Button (Desktop) */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-4">
           <a
             href="/Resume.pdf"
             target="_blank"
@@ -92,6 +105,7 @@ export default function Navbar() {
             Resume
           </a>
         </div>
+        {/* Avatar in mobile menu removed for logo consistency */}
       </div>
     </header>
   )
