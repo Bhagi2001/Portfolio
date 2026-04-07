@@ -76,7 +76,7 @@ export default function About() {
 
           {/* ── Left: Photo ── */}
           <div className="flex justify-start lg:justify-end">
-            <div className="relative w-72 h-88 md:w-80 md:h-[26rem]">
+            <div className="relative w-72 h-96 md:w-80 md:h-[26rem]">
               {/* Shadow block */}
               <div className="absolute inset-0 rounded-3xl bg-accent-light translate-x-4 translate-y-4" />
               <div className="relative h-full rounded-3xl overflow-hidden shadow-2xl border border-gray-100">

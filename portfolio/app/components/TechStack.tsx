@@ -24,7 +24,7 @@ const designIcons = [
 ]
 
 // Duplicate for seamless infinite loops
-const marqueeItems = [...techIcons, ...techIcons]
+const marqueeItems = [...techIcons, ...techIcons, ...techIcons, ...techIcons]
 const designMarqueeItems = [...designIcons, ...designIcons, ...designIcons, ...designIcons]
 
 export default function TechStack() {
