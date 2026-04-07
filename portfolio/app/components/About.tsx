@@ -71,11 +71,11 @@ function Chip({ name, color, bg }: { name: string; color: string; bg: string }) 
 export default function About() {
   return (
     <section id="about" className="py-24 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-start">
 
           {/* ── Left: Photo ── */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-start lg:justify-end">
             <div className="relative w-72 h-88 md:w-80 md:h-[26rem]">
               {/* Shadow block */}
               <div className="absolute inset-0 rounded-3xl bg-accent-light translate-x-4 translate-y-4" />

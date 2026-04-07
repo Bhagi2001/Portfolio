@@ -53,7 +53,7 @@ export default function TechStack() {
         {/* ── DESIGN TOOLS ── */}
         <div className="tech-block" data-reveal>
           <p className="tech-label">Design Tools</p>
-          <div className="design-icons-row flex flex-row items-center gap-4">
+          <div className="design-icons-row flex flex-wrap justify-center items-center gap-6 md:gap-10">
             {designIcons.map((icon, i) => (
               <div className="marquee-card" key={`${icon.name}-${i}`} title={icon.name}>
                 <div className="marquee-icon">

@@ -56,9 +56,15 @@ body {
 
 /* Section shell */
 .tech-section {
-  padding: 0 180px 90px;
+  padding: 60px 24px;
   background: #ffffff;
   overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .tech-section {
+    padding: 90px 80px;
+  }
 }
 
 .tech-inner {
@@ -98,10 +104,16 @@ body {
 
 .marquee-track {
   display: flex;
-  gap: 60px;
+  gap: 32px;
   width: max-content;
   animation: marquee-scroll 32s linear infinite;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .marquee-track {
+    gap: 60px;
+  }
 }
 
 /* Pause + slow on hover of the wrapper */
